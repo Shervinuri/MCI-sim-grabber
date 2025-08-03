@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>جمع‌آوری اطلاعات سیم‌کارت</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>جمع‌آوری اطلاعات سیم‌کارت‌های همراه اول</h1>
+        <p>برای دریافت آخرین لیست شماره‌ها و قیمت‌ها، روی دکمه زیر کلیک کنید.</p>
+        <button id="startButton">🚀 شروع و دریافت فایل‌ها</button>
+        <div id="loader" class="loader" style="display: none;"></div>
+        <div id="status"></div>
+        <div id="download-links"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
