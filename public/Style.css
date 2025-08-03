@@ -1,0 +1,81 @@
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f4f7f9;
+    color: #333;
+    text-align: center;
+    margin: 0;
+}
+
+.container {
+    background: #fff;
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+    max-width: 500px;
+}
+
+h1 {
+    font-size: 1.8rem;
+    color: #1a237e;
+}
+
+p {
+    font-size: 1.1rem;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+#startButton {
+    background-color: #3f51b5;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+#startButton:hover {
+    background-color: #303f9f;
+    transform: translateY(-2px);
+}
+
+#startButton:disabled {
+    background-color: #9e9e9e;
+    cursor: not-allowed;
+}
+
+.loader {
+    border: 6px solid #f3f3f3;
+    border-top: 6px solid #3f51b5;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    animation: spin 1s linear infinite;
+    margin: 20px auto;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+#download-links a {
+    display: inline-block;
+    margin: 10px;
+    padding: 10px 20px;
+    background-color: #4caf50;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+#download-links a:hover {
+    background-color: #45a049;
+}
